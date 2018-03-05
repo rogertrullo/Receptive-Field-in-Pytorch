@@ -1,5 +1,5 @@
 # Receptive-Field-in-Pytorch
-Numerical Computation of Receptive Field in Pytorch
+## Numerical Computation of Receptive Field in Pytorch
 I present a simple pytorch code that computes numerically the Receptive Field (RF) of a convolutional network. It can work with very complicated networks in 2D, 3D, with dilation, skip/residual connections, etc.
 
 * In the Jupyter notebook I explain how can we compute the RF both analitycally and numerically. I show some code that computes both.
