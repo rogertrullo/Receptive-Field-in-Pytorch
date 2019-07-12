@@ -15,7 +15,8 @@ def compute_RF_numerical(net,img_np):
         classname = m.__class__.__name__
         if classname.find('Conv') != -1:
             m.weight.data.fill_(1)
-            m.bias.data.fill_(0)
+            if m.bias:
+                m.bias.data.fill_(0)
     net.apply(weights_init)
     img_ = Variable(torch.from_numpy(img_np).float(),requires_grad=True)
     out_cnn=net(img_)
